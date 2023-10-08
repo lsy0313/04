@@ -3,15 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int time, min, sec;
+    int year, result;
+    int x, y, z;
     
-    printf("input the second : ");
-    scanf("%d", &time);
+    printf("input the year : ");
+    scanf("%d", &year);
     
-    min = time / 60;
-    sec = time % 60;
+    x = year % 4;
+    y = year % 100;
+    z = year % 400;
     
-    printf("the time is %d : %d \n", min, sec);
+    result = (!x && y) || !z;
+    
+    printf("is the year %d the leap year? : %d \n", year, result);
    
   system("PAUSE");
   
