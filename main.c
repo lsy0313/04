@@ -3,23 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    int a, b;  // ÀÔ·Â¹Þ´Â µÎ °³ÀÇ Á¤¼ö 
-    int add, sub, mul, div, rest; // µ¡¼À, »¬¼À, °ö¼À, ³ª´°¼À, ³ª¸ÓÁö  
+    int time, min, sec;
     
-    printf("input two integers : ");
-    scanf("%d %d", &a, &b);
+    printf("input the second : ");
+    scanf("%d", &time);
     
-    add = a + b;
-    sub = a - b;
-    mul = a * b;
-    div = a / b;
-    rest = a % b;
-     
-    printf("+ result is %d\n", add);
-    printf("- result is %d\n", sub);
-    printf("* result is %d\n", mul);
-    printf("/ result is %d\n", div);
-    printf("%% result is %d\n", rest);
+    min = time / 60;
+    sec = time % 60;
+    
+    printf("the time is %d : %d \n", min, sec);
    
   system("PAUSE");
   
