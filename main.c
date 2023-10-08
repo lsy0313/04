@@ -3,10 +3,11 @@
 
 int main(int argc, char *argv[])
 {
+    
     int time, hours, min, sec;
     
     printf("input the second : ");
-    scanf("%d", time);
+    scanf("%d", &time);
     
     hours = time / 3600;
     time = time % 3600;
@@ -17,6 +18,6 @@ int main(int argc, char *argv[])
     
    
   system("PAUSE");
-  
+    
   return 0;
 }
