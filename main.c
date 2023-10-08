@@ -3,21 +3,23 @@
 
 int main(int argc, char *argv[])
 {
-    int x, y, z, m;
-    int a, b, c;
+    int a, b;  // ÀÔ·Â¹Þ´Â µÎ °³ÀÇ Á¤¼ö 
+    int add, sub, mul, div, rest; // µ¡¼À, »¬¼À, °ö¼À, ³ª´°¼À, ³ª¸ÓÁö  
     
-    x = 2;
-    z = 1;
+    printf("input two integers : ");
+    scanf("%d %d", &a, &b);
     
-    a = 3;
-    b = 4;
-    c = 5;
-    
-    y = a * x * x + b * x + c;
-    m = (x + y + z) / 3;
-    
-    printf("y = %d, m = %d", y, m);
+    add = a + b;
+    sub = a - b;
+    mul = a * b;
+    div = a / b;
+    rest = a % b;
      
+    printf("+ result is %d\n", add);
+    printf("- result is %d\n", sub);
+    printf("* result is %d\n", mul);
+    printf("/ result is %d\n", div);
+    printf("%% result is %d\n", rest);
    
   system("PAUSE");
   
